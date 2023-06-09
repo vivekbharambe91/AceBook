@@ -1,0 +1,24 @@
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flexaligncenter{
+    display: flex;
+    align-items: center;
+}
+.flexalignbetween{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flexcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+}
+.cursor{
+    cursor: pointer;
+}
