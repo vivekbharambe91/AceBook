@@ -1,9 +1,19 @@
-import React from 'react'
+import {React,useEffect,useState} from 'react'
 import "./index.css"
 import { feed,friendList } from "./helper"
-import Closefriends from "../Closefriends/index"
+import Online from '../Online'
 
 const Sidebar = () => {
+  const [closeFriendsList,setCloseFriendsList] = useState([])
+
+useEffect(()=>{
+    closeFriendFunction()
+},[])
+
+function closeFriendFunction(){
+  setCloseFriendsList(friendList?.filter(e=>e.close==="true"))
+}
+
   return (
     <div className='sidebar'>
       <div className="sidebar-wrapper">
@@ -18,8 +28,8 @@ const Sidebar = () => {
         <hr/>
         <span className='close-title'>Close friends</span>
         <ul className='friendlist'>
-        {friendList?.map(e=>
-         <Closefriends
+        {closeFriendsList?.map(e=>
+         <Online
          profilePic={e.profilePic}
          friendName={e.friendName}
          />

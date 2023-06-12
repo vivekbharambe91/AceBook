@@ -1,0 +1,24 @@
+.profilepicture .img-wrapper img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    position: relative;
+}
+.profile-dp{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px #fff solid;
+}
+.profile-dp-img-wrapper{
+    position: absolute;
+    top: 35%;
+    left: 55%;
+}
+.profile-dp-img-wrapper{
+    text-align: center;
+    line-height: 1;
+}
+.profile-dp-img-wrapper h2{
+    margin-bottom: 0;
+}

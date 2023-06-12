@@ -7,14 +7,10 @@ import Rightbar from '../../Components/Rightbar'
 
 const Home = () => {
   return (
-    <>
-    <Navbar/>
     <div className="acebook-container">
-    <Sidebar/>
     <Feed/>
     <Rightbar/>
     </div>
-    </>
   )
 }
 

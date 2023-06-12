@@ -1,0 +1,23 @@
+.online li{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+}
+.online .active-circle{
+    border: 1.5px solid #fff;
+    position: absolute;
+    top: 10px; 
+    left: 30px; 
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+}
+.online li:hover{
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+}

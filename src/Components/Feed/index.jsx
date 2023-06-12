@@ -10,6 +10,8 @@ const Feed = () => {
       <Share/>
       {postDetails?.map(e=>
         <Post 
+        likes={e.likes}
+        reaction={e.reaction}
         status={e.status}
         profilePicture={e.profilePicture} 
         profileName={e.profileName}

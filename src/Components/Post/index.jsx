@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import "./index.css"
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
@@ -6,7 +6,26 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import SendIcon from '@mui/icons-material/Send';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 
-const index = (props) => {
+const Post = (props) => {
+  const [likes,setLikes] = useState(props?.likes)
+  const [isLiked,setIsLiked] = useState(false)
+  const [reaction,setReaction] = useState(props?.reaction)
+  const [isReacted,setIsReacted] = useState(false)
+  const [comment,setComment] = useState(props?.comment)
+  const [share,setShare] = useState(props?.share)
+
+  function ClickOnce(Event){
+    console.log(isReacted)
+    if(Event==="like"){
+       setLikes(isLiked?likes-1:likes+1)
+       setIsLiked(isLiked===false?true:false)
+    }
+    else if(Event==="reaction"){
+    setReaction(isReacted?reaction-1:reaction+1)
+    setIsReacted(isReacted===false?true:false)
+    }
+  }
+  
   return (
     <div className='post'>
         <div className="post-container">
@@ -29,10 +48,10 @@ const index = (props) => {
             <div className="post-enhancer-container flexalignbetween">
             <div className="post-enhancher">
             <div className="post-like">
-            <ThumbUpIcon/>
+            <ThumbUpIcon onClick={()=>ClickOnce("like")}/>
             </div>
             <div className="post-react">
-            <FavoriteBorderIcon/>
+            <FavoriteBorderIcon onClick={()=>ClickOnce("reaction")}/>
             </div>
             <div className="post-comment">
             <ChatBubbleIcon/>
@@ -40,7 +59,7 @@ const index = (props) => {
             <div className="post-share">
                 <SendIcon/>
             </div>
-            <span>32 people liked it</span>
+            <span>{likes} {reaction} people liked it</span>
             </div>
             <span className='cursor'>10 comments</span>
             </div>
@@ -49,4 +68,4 @@ const index = (props) => {
   )
 }
 
-export default index
+export default Post

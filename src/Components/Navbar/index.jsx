@@ -4,12 +4,15 @@ import PersonIcon from '@mui/icons-material/Person';
 import ChatIcon from "@mui/icons-material/Chat"
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import "./index.css"
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+    var username="arun"
+    const Navigate = useNavigate()
   return (
     <div className="navbar-container">
         <div className="navbar-left">
-            <span className='logo'>
+            <span className='logo' onClick={()=>Navigate("/")}>
                 AceBook
             </span>
         </div>
@@ -38,7 +41,7 @@ const Navbar = () => {
                     <span>1</span>
                 </div>
             </div>
-            <img className="profile-pic" src='https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1985&q=80' alt='profile-pic'/>
+            <img onClick={()=>Navigate(`/profile/${username}`)} className="profile-pic" src='https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1985&q=80' alt='profile-pic'/>
         </div>
     </div>
   )

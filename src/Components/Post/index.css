@@ -50,3 +50,6 @@
 .post-enhancher .post-like:hover,.post-enhancher .post-comment:hover,.post-enhancher .post-react:hover{
     transform: scale(1.5);
 }
+.post-enhancher .post-like:active{
+    color: #623f99;
+}
