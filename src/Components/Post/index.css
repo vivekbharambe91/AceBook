@@ -53,3 +53,11 @@
 .post-enhancher .post-like:active{
     color: #623f99;
 }
+@media screen and (max-width:767px) {
+    .post{
+        margin: 7px;
+    }    
+    .post-enhancher{
+        gap: 5px;
+    }
+}

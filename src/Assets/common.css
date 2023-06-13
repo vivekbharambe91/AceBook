@@ -22,3 +22,10 @@
 .cursor{
     cursor: pointer;
 }
+.col{
+    display: flex;
+    flex-direction: column;
+}
+body{
+    width: 100%;
+}

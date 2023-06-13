@@ -6,7 +6,7 @@ import { postDetails } from '../Sidebar/helper';
 
 const Feed = () => {
   return (
-    <div className='feed'>
+    <div className='feed col-md-12'>
       <Share/>
       {postDetails?.map(e=>
         <Post 

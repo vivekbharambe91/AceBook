@@ -1,0 +1,13 @@
+.timeline{
+    display: flex;
+    margin-top: 150px;
+}
+.timeline-wrapper{
+    display: flex;
+}
+.feed-wrapper{
+    flex: 8;
+}
+.profileright-wrapper{
+    flex: 4;
+}

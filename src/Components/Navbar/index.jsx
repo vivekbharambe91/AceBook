@@ -10,7 +10,7 @@ const Navbar = () => {
     var username="arun"
     const Navigate = useNavigate()
   return (
-    <div className="navbar-container">
+    <div className="navbar-container col-md-12 col-xs-12">
         <div className="navbar-left">
             <span className='logo' onClick={()=>Navigate("/")}>
                 AceBook

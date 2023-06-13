@@ -7,7 +7,7 @@ import Rightbar from '../../Components/Rightbar'
 
 const Home = () => {
   return (
-    <div className="acebook-container">
+    <div className="row acebook-container">
     <Feed/>
     <Rightbar/>
     </div>

@@ -56,10 +56,10 @@ const Post = (props) => {
             <div className="post-comment">
             <ChatBubbleIcon/>
             </div>
-            <div className="post-share">
+            {/* <div className="post-share">
                 <SendIcon/>
-            </div>
-            <span>{likes} {reaction} people liked it</span>
+            </div> */}
+            <span>{likes} people liked it</span>
             </div>
             <span className='cursor'>10 comments</span>
             </div>

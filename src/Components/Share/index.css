@@ -43,3 +43,11 @@ width: 100%;
     display: flex;
     align-items: center;
 }
+@media screen and (max-width:767px) {
+    .share{
+        margin: 7px;
+    }
+    .shareoption span{
+        font-size: 10px;
+    }
+}
