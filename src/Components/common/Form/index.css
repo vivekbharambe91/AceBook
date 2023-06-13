@@ -1,0 +1,29 @@
+.common-form{
+    width: 90%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.common-form .form-group{
+    margin: 20px;
+}
+.common-form .form-group button{
+    margin-top: 15px;
+    width: 100%;
+}
+.form-group .form-control,.form-group button{
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.common-form .form-group span{
+    color: blue;
+}
+.common-form .form-group .btnsuccess{
+    background-color: #359a23;
+    color: #fff;
+    width: 75%;
+}
+.common-form .textcenter .form-group{
+    margin: 10px;
+}

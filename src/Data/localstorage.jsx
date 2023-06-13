@@ -1,0 +1,1 @@
+export const getItem = (key) => localStorage.getItem(key);

@@ -26,6 +26,9 @@
     display: flex;
     flex-direction: column;
 }
+.textcenter{
+    text-align: center;
+}
 body{
     width: 100%;
 }

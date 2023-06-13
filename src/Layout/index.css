@@ -1,6 +1,7 @@
 .main-content{
-    width: 75.8%;
-    margin-left: 24.2%;
+    width: 75.57%;
+    margin-left: 24.3%;
+    margin-top: 70px;
 }
 @media screen and (max-width:767px) {
     .main-content{
