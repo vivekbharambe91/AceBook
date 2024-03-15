@@ -6,11 +6,11 @@ import "./index.css"
 const Layout = (props) => {
   return (
     <React.Fragment>
-    <Navbar/>
-    <Sidebar/>
-    <div className="main-content">
-   {props?.component}
-   </div>
+      <Navbar />
+      <Sidebar />
+      <div className="main-content">
+        {props?.component}
+      </div>
     </React.Fragment>
   )
 }

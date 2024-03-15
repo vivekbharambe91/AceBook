@@ -5,7 +5,7 @@ import Home from "./Pages/Home";
 import routes from "./routes"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Provider } from "react-redux";
-import store from "./store/reducer"
+import store from "./store"
 
 function App() {
 
